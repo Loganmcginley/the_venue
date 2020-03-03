@@ -1,8 +1,14 @@
+.app {
+    position: relative;
+}
+
+
 
 body {
     padding:0;
     margin:0;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .font_righteous {
@@ -78,11 +84,13 @@ footer .footer_copyright {
 .carrousel_wrapper {
     height:700px;
     overflow: hidden;
+    
 }
 
 .carrousel_image {
     
     background-size: cover !important;
+    
 }
 
 .artist_name {
@@ -160,6 +168,7 @@ footer .footer_copyright {
     width:50%;
     color:#ffffff;
     text-align: center;
+    
 }
                       
 .vn_item .vn_outer {

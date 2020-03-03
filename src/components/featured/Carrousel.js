@@ -12,7 +12,10 @@ const Carrousel = () => {
         dots: false,
         infinite: true,
         autoplay: true,
-        speed: 500
+        speed: 500,
+        fade: true,
+        pauseOnHover: false
+
     }
 
     return (
@@ -21,6 +24,7 @@ const Carrousel = () => {
             style={{
                 height: `${window.innerHeight}px`,
                 overflow: 'hidden'
+
             }}
         >
             <Slider {...settings}>
@@ -28,8 +32,9 @@ const Carrousel = () => {
                     <div
                         className="carrousel_image"
                         style={{
-                            background: `url(${slide_one})`,
-                            height: `${window.innerHeight}px`
+                            background: `url(${slide_one}) no-repeat center`,
+                            height: `${window.innerHeight}px`,
+                            backgroundSize: 'cover'
                         }}
                     ></div>
                 </div>
@@ -37,8 +42,9 @@ const Carrousel = () => {
                     <div
                         className="carrousel_image"
                         style={{
-                            background: `url(${slide_two})`,
-                            height: `${window.innerHeight}px`
+                            background: `url(${slide_two}) no-repeat center`,
+                            height: `${window.innerHeight}px`,
+                            backgroundSize: 'cover'
                         }}
                     ></div>
                 </div>
@@ -46,8 +52,9 @@ const Carrousel = () => {
                     <div
                         className="carrousel_image"
                         style={{
-                            background: `url(${slide_three})`,
-                            height: `${window.innerHeight}px`
+                            background: `url(${slide_three}) no-repeat center`,
+                            height: `${window.innerHeight}px`,
+                            backgroundSize: 'cover'
                         }}
                     ></div>
                 </div>
