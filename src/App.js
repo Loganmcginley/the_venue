@@ -13,24 +13,16 @@ import Footer from './components/header_footer/Footer';
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{ height: "1500px", position: 'relative', background: 'cornflowerblue' }}>
-        <Header
-          class="grid-row: 1/3"
-          class="grid-column: 1/-1"
-        />
+      <div className="App" style={{ height: "1500px", position: 'relative' }} >
 
-        <Element name="featured"
-          class="grid-row: 1/3"
-          class="grid-column: 1/-1"
-        >
+        <Header className="col-12" />
+
+        <Element name="featured">
           <Featured />
         </Element>
 
         <Element name="venuenfo">
-          <VenueNfo
-            class="grid-row: 3/4"
-            class="grid-column: 1/-1"
-          />
+          <VenueNfo />
         </Element>
 
         <Element name="highlights">

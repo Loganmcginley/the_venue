@@ -14,8 +14,26 @@ const Carrousel = () => {
         autoplay: true,
         speed: 500,
         fade: true,
-        pauseOnHover: false
-
+        pauseOnHover: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                }
+            }
+        ]
     }
 
     return (
